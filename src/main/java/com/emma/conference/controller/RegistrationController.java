@@ -15,11 +15,10 @@ public class RegistrationController {
     @GetMapping("registration")
     public String getRegistration(@ModelAttribute("registration")Registration registration){
         return "registration";
-
     }
     @PostMapping("registration")
     public String addRegistration(@ModelAttribute("registration")Registration registration){
-        System.out.println("Registartion " + registration.getName());
+        System.out.println("Registration " + registration.getName());
         return "redirect:registration";
 
     }
